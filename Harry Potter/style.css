@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+}
+a{
+    text-decoration: none;
+    color: #3F444A;}
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header {
+  color: #000;
+  padding-top: 64px;
+  padding-left: 40px;
+  background: #f5f5f5;
+  width: 768px;
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+header > h1 {
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+header > span {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+/* next block */
+main {
+    overflow-y: hidden;
+  background: #f5f5f5;
+  width: 768px;
+  position: relative;
+  /* border: 1px solid black; */
+}
+.search-card {
+  padding: 48px 40px 40px 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #dee2e6;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #818182;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-name > input {
+  width: 452px;
+  padding: 9px 17px 8px 17px;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.card-school > select {
+  width: 216px;
+  padding: 9px 17px 8px 17px;
+  color: #818182;
+  border: 1px solid #ced4da;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.card-school>select{
+    appearance: none;
+background: url('./image/Vector\ \(15\).svg') no-repeat #ffffff;  ;
+/* background: white; */
+background-position-x: calc(100% - 17px);
+background-position-y: calc(100% - 12px);
+
+}
+/* nextblock */
+.result-search {
+  overflow-y: auto;
+  padding: 40px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  /* overflow-y: scroll; */
+}
+.result-search::-webkit-scrollbar {width:0px;}
+#showLiked {
+  position: absolute;
+  bottom: 23px;
+  left: 570px;
+  z-index: 20;
+  width: 157px;
+  padding: 10px 13px;
+  background: #ffffff;
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  border: none;
+  outline: none;
+  
+}
+#showLiked:hover {
+  outline: 1px solid black;
+}
+figure {
+  position: relative;
+  width: 334px;
+  height: 409px;
+  border: 1px solid #dee2e6;
+  box-sizing: border-box;
+  border-radius: 4px;
+  background: #ffffff;
+}
+figure > button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.16);
+  background: #ffffff;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+figure > button > svg > path {
+  fill: red;
+}
+figure > img {
+  width: 100%;
+  height: 192px;
+}
+.card-info {
+  padding: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #152536;
+}
+.card-info > span {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+/*  */
+
+.header-for-like {
+    margin-top: 50px;
+  border-top: 2px solid black;
+  color: #000;
+  padding-top: 64px;
+  padding-left: 40px;
+  background: #f5f5f5;
+  width: 768px;
+  box-sizing: border-box;
+
+  /* border: 1px solid black; */
+}
+.header-for-like > h1 {
+    margin-top: 48px;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 77px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.header-for-like > span {
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.header-for-like > button {
+  color: #3f444a;
+  border-bottom: 1px solid #3f444a;
+  /* border: none; */
+  border-top:none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding-bottom: 1px;
+}
+.result-like {
+  overflow: auto;
+  box-sizing: border-box;
+  width: 768px;
+  height: 500px;
+  background: #f5f5f5;
+  padding: 40px;
+  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.result-like::-webkit-scrollbar {width:0px;}

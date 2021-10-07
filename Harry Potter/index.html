@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potte</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header id="header">
+        <h1>Harry Potter</h1>
+        <span>View all characters from the Harry Potter universe</span>
+    </header>
+    <main>
+        <div class="search-card">
+            <div class="card-name">
+                <label for="">Name</label>
+                <br>
+                <input type="search" placeholder="Hermione">
+            </div>
+            <div class="card-school">
+                <label for="">School</label>
+                <br>
+                <select name="" id="">
+                    <option value="" selected>Choose one</option>
+                    <option value="">Choose two</option>
+                    <option value="">Choose three</option>
+                    <option value="">Choose four</option>
+                </select>
+            </div>
+        </div>
+        <div class="result-search">
+            <!-- <figure>
+                <img src="${i.img}" alt="">
+                <div class="card-info">
+                    <span>${i.name}</span>
+                    <p>Actor: ${i.actor}</p>
+                    <p>Male: ${i.gender}</p>
+                    <p>House: ${i.house}</p>
+                    <p>Wand core: ${i.wandCore}</p>
+                    <p>Alives: ${i.alive}</p>
+                </div>
+                <button>
+                    <svg width="24" height="23" viewBox="0 0 24 23" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M11.9998 4.12207L10.9243 3.01657C8.39984 0.421573 3.77084 1.31707 2.09984 4.57957C1.31534 6.11407 1.13834 8.32957 2.57084 11.1571C3.95084 13.8796 6.82184 17.1406 11.9998 20.6926C17.1778 17.1406 20.0473 13.8796 21.4288 11.1571C22.8613 8.32807 22.6858 6.11407 21.8998 4.57957C20.2288 1.31707 15.5998 0.420073 13.0753 3.01507L11.9998 4.12207ZM11.9998 22.5001C-10.9997 7.30207 4.91834 -4.55993 11.7358 1.71457C11.8258 1.79707 11.9143 1.88257 11.9998 1.97107C12.0845 1.88265 12.1725 1.79759 12.2638 1.71607C19.0798 -4.56293 34.9993 7.30057 11.9998 22.5001Z"
+                            fill="#DC3545" />
+                    </svg>
+                </button>
+            </figure> -->
+        </div>
+        
+        <button id="showLiked" onclick="arrayLike(),renderLike()"><svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9997 1.97108C18.6567 -4.87192 35.3007 7.10258 11.9997 22.5001C-11.3013 7.10408 5.34267 -4.87192 11.9997 1.97108Z" fill="#DC3545"/>
+            </svg>Show Liked</button>
+    </main>
+    <div class="header-for-like">
+        <button><a href="#header">← Back To All</a></button>
+
+        <h1>Liked ones</h1>
+        <span>Your favorite characters from the Harry Potter universe.</span>
+    </div>
+    <div class="result-like">
+
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
